@@ -15,7 +15,9 @@ class Post extends Component {
         </header>
         <h1>{this.props.title}</h1>
         <ul>
-        Written by: {this.props.author}
+        <li>Written by: {this.props.authors[0]}</li>
+        <li>Written by: {this.props.authors[1]}</li>
+        <li>Written by: {this.props.authors[2]}</li>
         </ul>
         <p>{this.props.body}</p>
         <h2>Comments:</h2>

@@ -2,21 +2,26 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+
+class Post extends Component {
+
   render() {
     return (
       //nested components
-      <div className="App">
+      <div className="Post">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1>{this.props.title}</h1>
+        <ul>
+          Written by: {this.props.author}
+        </ul>
+        <p>{this.props.body}</p>
+        <h2>Comments:</h2>
+          {/*{this.props.comments[0]}*/}
       </div>
     );
   }
 }
 
-export default App;
+export default Post;

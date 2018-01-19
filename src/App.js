@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Authors from './Authors.js';
 import './App.css';
 
 
@@ -14,11 +15,11 @@ class Post extends Component {
         </header>
         <h1>{this.props.title}</h1>
         <ul>
-          Written by: {this.props.author}
+        Written by: {this.props.author}
         </ul>
         <p>{this.props.body}</p>
         <h2>Comments:</h2>
-          {/*{this.props.comments[0]}*/}
+          {this.props.comment[0]}
       </div>
     );
   }
